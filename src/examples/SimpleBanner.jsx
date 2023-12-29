@@ -18,9 +18,9 @@ const SimpleBanner = () => {
         ]}
         className="bg-container"
       >
-        <div className="bg-container">
+        {/* <div className="bg-container">
           <h1 className="">Hello World!</h1>
-        </div>
+        </div> */}
       </ParallaxBanner>
     </div>
   );

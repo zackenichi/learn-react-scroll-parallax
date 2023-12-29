@@ -56,9 +56,9 @@
 .bg-container {
   position: relative;
   width: 70% !important;
-  height: 400px;
+  height: 600px;
   margin: auto;
-  margin-top: 55%;
+  margin-top: 30%;
 }
 .bg-container h1 {
   color: white;

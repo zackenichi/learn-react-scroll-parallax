@@ -1,22 +1,38 @@
 import './App.css';
-import Scaling from './examples/Scaling';
-import SimpleBanner from './examples/SimpleBanner';
-import SpinHello from './examples/SpinHello';
-import Spinner from './examples/Spinner';
+import Header from './components/Header';
+
+import Examples from './Examples';
+
+import { Box } from '@mui/material';
 
 const App = () => {
   return (
-    <div className="app-main">
-      <div>
-        <h1>React Scroll Parallax</h1>
-      </div>
-      <div>
-        <Spinner />
-        <SpinHello />
-        <Scaling />
-        <SimpleBanner />
-      </div>
-    </div>
+    <Box
+      sx={{
+        display: 'grid',
+        height: '100vh',
+        gridTemplateRows: 'auto 1fr',
+        gridTemplateAreas: `"header" "main"`,
+        // p: 2,
+      }}
+      id="appContainer"
+      role="main"
+    >
+      <Box
+        sx={{
+          gridArea: 'header',
+        }}
+      >
+        <Header />
+      </Box>
+      <Box
+        sx={{
+          gridArea: 'main',
+        }}
+      >
+        <Examples />
+      </Box>
+    </Box>
   );
 };
 export default App;
